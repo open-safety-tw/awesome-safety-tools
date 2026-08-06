@@ -1,0 +1,37 @@
+name: 台灣繁體中文翻譯問題
+description: 回報錯譯、術語、失效連結或來源更新
+title: "[zh-Hant-TW] "
+labels:
+  - documentation
+body:
+  - type: input
+    id: item
+    attributes:
+      label: 工具或段落
+      description: 請提供工具名稱、分類或段落標題
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 問題說明
+      description: 請說明錯譯、遺漏、來源變動或可能造成誤解之處
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 來源
+      description: 若有新版英文來源、授權或維護狀態證據，請附網址
+  - type: dropdown
+    id: review
+    attributes:
+      label: 需要的審查
+      options:
+        - 台灣繁體中文
+        - 信任與安全或平台治理
+        - 授權或法律
+        - 技術
+        - 尚不確定
+    validations:
+      required: true
