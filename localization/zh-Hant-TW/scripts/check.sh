@@ -50,8 +50,12 @@ localized_readme="$repo_root/README.zh-Hant-TW.md"
 if [[ -f "$localized_readme" ]]; then
   source_tools="$(grep -c '^\* \[' "$repo_root/README.md")"
   localized_tools="$(grep -c '^\* \[' "$localized_readme")"
+  source_descriptions="$(grep -c '^  \* ' "$repo_root/README.md")"
+  localized_descriptions="$(grep -c '^  \* ' "$localized_readme")"
   source_categories="$(grep -c '^## ' "$repo_root/README.md")"
   localized_categories="$(grep -c '^## ' "$localized_readme")"
+  source_item_lines="$(grep '^\* \[' "$repo_root/README.md" | sed -E 's/[[:space:]]+\)/)/g; s/[[:space:]]+$//')"
+  localized_item_lines="$(grep '^\* \[' "$localized_readme" | sed -E 's/[[:space:]]+\)/)/g; s/[[:space:]]+$//')"
 
   if [[ "$source_tools" != "$localized_tools" ]]; then
     echo "Tool count differs: source=$source_tools localized=$localized_tools" >&2
@@ -60,6 +64,16 @@ if [[ -f "$localized_readme" ]]; then
 
   if [[ "$source_categories" != "$localized_categories" ]]; then
     echo "Category count differs: source=$source_categories localized=$localized_categories" >&2
+    errors=$((errors + 1))
+  fi
+
+  if [[ "$source_descriptions" != "$localized_descriptions" ]]; then
+    echo "Description count differs: source=$source_descriptions localized=$localized_descriptions" >&2
+    errors=$((errors + 1))
+  fi
+
+  if [[ "$source_item_lines" != "$localized_item_lines" ]]; then
+    echo "Tool names, order, or links differ from source" >&2
     errors=$((errors + 1))
   fi
 fi
