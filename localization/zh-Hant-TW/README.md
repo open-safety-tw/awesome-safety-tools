@@ -12,6 +12,7 @@
 
 ## 檔案
 
+- [繁中工具目錄網站](https://mashbean.github.io/awesome-safety-tools/) 提供適合一般閱讀的公開入口
 - [`README.zh-Hant-TW.md`](../../README.zh-Hant-TW.md) 是可直接閱讀的繁中工具目錄
 - [`sources.tsv`](sources.tsv) 記錄來源版本與審查狀態
 - [`WORKFLOW.md`](WORKFLOW.md) 說明更新、審查與工具增修方式

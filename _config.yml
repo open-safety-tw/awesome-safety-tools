@@ -1,0 +1,11 @@
+title: 開放安全工具地圖
+description: ROOST awesome-safety-tools 的非官方台灣繁體中文社群版本
+url: https://mashbean.github.io
+baseurl: /awesome-safety-tools
+markdown: kramdown
+exclude:
+  - localization/zh-Hant-TW/book
+  - localization/zh-Hant-TW/scripts
+  - localization/zh-Hant-TW/sources.tsv
+  - localization/zh-Hant-TW/STYLE_GUIDE.md
+  - localization/zh-Hant-TW/WORKFLOW.md

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#163a42">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/">
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#directory">跳到工具清單</a>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="主要導覽">
+        <a class="brand" href="https://roost.mashbean.net/">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span>ROOST 繁中資源</span>
+        </a>
+        <div class="nav-links">
+          <a href="https://github.com/roostorg/awesome-safety-tools">英文來源</a>
+          <a class="nav-button" href="https://github.com/mashbean/awesome-safety-tools/tree/codex/zh-hant-tw-localization">翻譯紀錄</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">ROOST OPEN SAFETY ECOSYSTEM</p>
+          <h1 id="page-title">開放安全工具地圖</h1>
+          <p class="hero-lead">從內容偵測、審查與調查，到隱私、規則引擎、資料集與聯邦宇宙，依治理需求探索可進一步評估的開放工具。</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#directory">開始瀏覽</a>
+            <a class="text-link" href="https://roost.mashbean.net/#landing-ecosystem-title">回到 ROOST 生態系</a>
+          </div>
+        </div>
+        <dl class="hero-stats" aria-label="目錄統計">
+          <div><dt>14</dt><dd>工具類別</dd></div>
+          <div><dt>113</dt><dd>收錄項目</dd></div>
+          <div><dt>1st</dt><dd>繁中第一輪</dd></div>
+        </dl>
+      </section>
+
+      <aside class="disclosure" aria-label="使用提醒">
+        <strong>評估起點，不是採用背書</strong>
+        <p>工具被收錄不代表 ROOST 或繁中維護者認可其安全性、效能或適用性。導入前請回到官方來源確認授權、維護狀態、資料處理方式、語言涵蓋率與使用條件。</p>
+      </aside>
+
+      <article class="directory" id="directory">
+        {{ content }}
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p>這是 mashbean 維護的非官方台灣繁體中文社群版本，英文原文仍是 ROOST 專案內容的依據。</p>
+      <a href="https://roost.tools">roost.tools</a>
+    </footer>
+  </body>
+</html>
