@@ -23,6 +23,7 @@ if (errors.length === 0) {
   expect(html.includes('<html lang="zh-Hant-TW">'), "missing Traditional Chinese language declaration");
   expect(html.includes("開放安全工具地圖"), "missing page title");
   expect(html.includes("113</dt>"), "missing tool count");
+  expect(html.includes("完成</dt>"), "missing Traditional Chinese completion status");
   expect(html.includes("評估起點，不是採用背書"), "missing adoption disclaimer");
   expect(html.includes("mashbean 維護的非官方台灣繁體中文社群版本"), "missing unofficial-version disclosure");
   expect(html.includes('rel="canonical"'), "missing canonical URL");
