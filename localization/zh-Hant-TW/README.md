@@ -1,6 +1,6 @@
 # awesome-safety-tools 台灣繁體中文化
 
-本目錄管理 [ROOST awesome-safety-tools](https://github.com/roostorg/awesome-safety-tools) 工具清單的台灣繁體中文版本。工作先在 `mashbean/awesome-safety-tools` fork 進行，待翻譯與審查流程穩定後，再評估是否向 ROOST 上游提案。
+本目錄管理 [ROOST awesome-safety-tools](https://github.com/roostorg/awesome-safety-tools) 工具清單的台灣繁體中文版本。工作先在 `open-safety-tw/awesome-safety-tools` fork 進行，待翻譯與審查流程穩定後，再評估是否向 ROOST 上游提案。
 
 ## 目標
 
@@ -12,7 +12,7 @@
 
 ## 檔案
 
-- [繁中工具目錄網站](https://mashbean.github.io/awesome-safety-tools/) 提供適合一般閱讀的公開入口
+- [繁中工具目錄網站](https://open-safety-tw.github.io/awesome-safety-tools/) 提供適合一般閱讀的公開入口
 - [`README.zh-Hant-TW.md`](../../README.zh-Hant-TW.md) 是可直接閱讀的繁中工具目錄
 - [`sources.tsv`](sources.tsv) 記錄來源版本與審查狀態
 - [`WORKFLOW.md`](WORKFLOW.md) 說明更新、審查與工具增修方式

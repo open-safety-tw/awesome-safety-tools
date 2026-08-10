@@ -296,4 +296,4 @@
 
 ### 授權與來源
 
-本繁中版本改作自 [ROOST awesome-safety-tools 英文清單](https://github.com/roostorg/awesome-safety-tools/tree/3f3883115dc043eb875e77b5f5511a371e4d3f13)，依 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) 授權提供。繁中翻譯與用語調整由 `mashbean/awesome-safety-tools` fork 的貢獻者完成，審查狀態見 [`localization/zh-Hant-TW/sources.tsv`](localization/zh-Hant-TW/sources.tsv)。若譯文與來源版本不一致，請以該 commit 的英文內容為準。
+本繁中版本改作自 [ROOST awesome-safety-tools 英文清單](https://github.com/roostorg/awesome-safety-tools/tree/3f3883115dc043eb875e77b5f5511a371e4d3f13)，依 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) 授權提供。繁中翻譯與用語調整由 `open-safety-tw/awesome-safety-tools` fork 的貢獻者完成，審查狀態見 [`localization/zh-Hant-TW/sources.tsv`](localization/zh-Hant-TW/sources.tsv)。若譯文與來源版本不一致，請以該 commit 的英文內容為準。
